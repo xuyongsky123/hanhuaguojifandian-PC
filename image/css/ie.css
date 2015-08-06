@@ -1,0 +1,31 @@
+/*首页样式*/
+#focus_Box {margin-left:25px;}
+.detail_content_title {margin:0 auto;}
+.slideBox .prev {left:20px;}
+.slideBox .next {left:610px;}
+
+/*客房内页样式*/
+.slideBox .prev_fix {height:65px;width:40px;background:url(../images/toleft.png) 0 0 no-repeat;display: none;}
+.slideBox .next_fix {height:65px;width:40px;background:url(../images/toright.png) 0 0 no-repeat;display: none;}
+#focus_Box .prev{background:url(../images/toleft.png) left bottom no-repeat;left:0px}
+#focus_Box .next{background:url(../images/toright.png) right bottom no-repeat;right:5px} 
+.jssora03l {
+	left: 8px;
+	width: 50px;
+	height:50px;
+	-m-background-size:75px 75px;
+	-m-background-position:5px 50%;
+	background-size: 75px 75px;
+	background-position:5px 50%;
+}
+.jssora03r {
+	right: 8px;
+	width: 50px;
+	height:50px;
+	-m-background-size:75px 75px;
+	-m-background-position:-42px 50%;
+	background-size: 75px 75px;
+	background-position:-42px 50%;
+}
+img#about-title{margin-bottom: 20px;}
+.banquet .pop_right {right:-2px;}
