@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>北京汉华国际大酒店</title>
+<link rel="stylesheet" href="css/mian.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 8]>
+ 	<link rel="stylesheet" href="css/ie.css">
+<![endif]-->
+<!--[if IE 6]>
+<script src="script/DD_belatedPNG.js"></script>
+<script>
+  /* EXAMPLE */
+  DD_belatedPNG.fix('img,.center #prev,.center #next,.slideBox .prev_fix,.slideBox .next_fix,#focus_Box .prev,#focus_Box .next,.jssora03l, .jssora03r');
+  
+  /* string argument can be any CSS selector */
+  /* .png_bg example is unnecessary */
+  /* change it to what suits you! */
+</script>
+<![endif]-->
+<script type="text/javascript" src="script/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="script/jquery.cycle2.min.js"></script>
+<script>
+	$(function(){
+		function changesize(){
+			var wid=jQuery(window).width();
+			var hei=wid*(440/1500);
+			var footer_content=50+hei;
+			$('.banner_n').css('height',hei+35);
+			$('.play img').css('height',hei+35);
+			$('.forml_n').css('top',footer_content);
+		}
+		changesize();
+		$(window).bind("resize", function(){
+			changesize();
+		});
+	});
+</script>
+</head>
+
+<body style="position: relative;">
+	<!--<div class="head_t">
+		<div class="header_fix">
+			<p>
+				<span id="logo_title">欢迎光临北京汉华国际饭店~ </span>
+				<span>
+					<a href="#">简体中文</a>
+					<a href="#">ENGLISH</a>
+				</span>
+				<span>
+					<a href="#">登陆</a>
+					<a href="#">注册</a>
+				</span>
+			</p>
+		</div>
+	</div>
+	<div class="header_container">
+		<div id="header" class="header_fix">
+			<div class="head_b">
+				<img title="北京汉华国际大酒店" src="image/logo.jpg">
+				<ul>
+					<li>
+						<a href='index.html'>网站首页</a>
+					</li>
+					<li>
+						<a href='about.html'>关于酒店</a>
+					</li>
+					<li>
+						<a href='room_1.html'>客房与套房</a>
+					</li>
+					<li>
+						<a href='Meeting_1.html'>会议与宴会</a>
+					</li>
+					<li>
+						<a href='Restaurant_1.html'>美食</a>
+					</li>
+					<li>
+						<a href='Entertainment.html'>婚宴</a>
+					</li>
+					<li class="In-active">
+						<a href='health.html'>健康与休闲</a>
+					</li>
+					<li>
+						<a href='Tourism.html'>周边旅游</a>
+					</li>
+					<li>
+						<a href='Contactus.html'>联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>-->
+
+	<!--另一个头部，兼容ie6-->
+	<div style="background:#000;">
+		<div class="header_fix" style="position:relative;height:72px;">
+			<img title="北京汉华国际大酒店" src="image/logo_another.png" style="float:left;height:72px;width:154px;">
+			<div style="height:72px;width:850px;overflow:hidden;float:right;">
+				<div class="login_content" style="margin-top:12px;float:right;width:100%;">
+					<a style="border-left:1px solid #7d8184;">English</a>
+					<a style="border-left:1px solid #7d8184;">简体中文</a>
+					<a style="border-left:1px solid #7d8184;">注册</a>
+					<a>登陆</a>
+				</div>
+				<div class="login_footer" style="width:100%;float:right;height:72px;overflow:hidden;">
+					<ul style="float:right;margin-top:5px;">
+						<li>
+							<a href='index.html'>网站首页</a>
+						</li>
+						<li>
+							<a href='about.html'>关于酒店</a>
+						</li>
+						<li>
+							<a href='room_1.html'>客房与套房</a>
+						</li>
+						<li>
+							<a href='Meeting_1.html'>会议与宴会</a>
+						</li>
+						<li>
+							<a href='Restaurant_1.html'>美食</a>
+						</li>
+						<li>
+							<a href='Entertainment.html'>婚宴</a>
+						</li>
+						<li class="In-active">
+							<a href='health.html'>健康与休闲</a>
+						</li>
+						<li>
+							<a href='Tourism.html'>周边旅游</a>
+						</li>
+						<li>
+							<a href='Contactus.html'>联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="centent">
+		<div id="bodyer" >
+			<div class="banner_n">
+				<div class="play">
+					<img src="image/about_banner_six.jpg" style="top:72px;">
+				</div>
+				<div class="forml_n">
+					<form name="queryPriceForm" method="post" id="wuwufor">
+						<input name="checkInDate" type="botton" id="checkInDate" class="int"  readonly=""  onfocus="WdatePicker({minDate:'%y-%M-%d}',isShowClear:false,readOnly:true})">
+						<input name="checkOutDate" type="botton" id="checkOutDate" class="int" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'checkInDate\',{d:1})}',isShowClear:false,readOnly:true})" mindate="#Year#-#Month#-{#Day#+1}">
+						<select name="roomNum"></select>
+						<input type="text" value="促销代码">
+						<img src="image/booking.jpg">
+						<a href="#">订单查询</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div class="poplevelone"></div>
+	<div class="popleveltwo"></div>
+	<div class="poplevelthree"></div>-->
+	<div class="Introduction_n Introduction_n_fix clear header_fix" style="margin-top:35px;">
+		<div class="intro_left">
+			<div class="Introduction_a_l_fix">
+				<img src="image/health-title.png" id="about-title">
+				<ul class="intro_ul">
+					<li class="In-active"><a style="margin-right:60px;" href='javascript:;'>游泳池</a></li>
+					<li><a style="margin-right:60px;" href='javascript:;'>桑拿房</a></li>
+					<li><a style="margin-right:60px;" href='javascript:;'>健身房</a></li>
+					<!--<li><a href='javascript:;'>天禄阁</a></li>-->
+				</ul>
+			</div>
+		</div>
+		<div class="intro_right">
+			<div class="Introduction_a_r roomswitch" style="display:block">
+				<div class="Introduction_a_r_t">
+					<h2>为您提供舒适畅泳的休闲场所</h2>
+					<div class="slideBox slideBox_fix">
+						<div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="4000" data-cycle-pager="#tmp_pager" data-cycle-pager-template="<span></span>" style="height:520px;overflow:hidden;">
+							<!--<div class="cycle-pager" id="tmp_pager" style="position:absolute;top:0;height:50px;">
+							</div>-->
+							<img src="image/health/swim.jpg" />
+						</div>
+					</div>
+				</div>
+
+				<div class="Introduction_a_r_b clear">
+					<h3 style="font-weight:bold;">游泳池</h3>
+					<div class="house_detail" style="color:#000;line-height:30px;">
+						<div style="text-indent:2em">室内恒温游泳池为您提供舒适畅泳的休闲场所。</div>
+						<div style="text-indent:2em">营业时间：6.：30—23：00</div>
+						<div style="text-indent:2em">地点：地下一层</div>
+					</div>
+					<div class="help_div"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="footer_container" style="overflow:hidden;">
+		<div id="footer"> 
+			<div class="foot_t clear">
+				<div class="foot_l">
+					<h5>联系我们</h5>
+					<ul style="text-indent:1em;">
+						<li>酒店总机：86 10 58139988</li>
+						<li>销售部电话：86 10 58139711</li>
+						<li>预订部电话：86 10 58139710</li>
+						<li>酒店传真：86 10 58139999</li>
+						<li>预订部传真：86 10 58139777</li>
+						<li>地址：北京市东城区安外滨河路26号</li>
+					</ul>
+				</div>
+				<img src="image/logo.png" style="margin-top:55px;">
+				<div class="attention">
+					<h5 style="text-indent:80px;">关注我们</h5>
+					<div style="width:100%;overflow:hidden;"><img src="image/ooooooo.jpg" style="width:76px;height:76px;margin-right:1em;margin-top:16px;float:right;"/></div>
+					<a href="#"><img style="width:30px;height:30px;padding:0;margin-left:70px;margin-top:16px;" src="image/btn_1.png"></a>
+					<a href="#"><img style="width:30px;height:30px;padding:0;margin-left:12px;margin-top:16px;" src="image/btn_2.png"></a>
+					<a href="#"><img style="width:30px;height:30px;padding:0;margin-left:12px;margin-top:16px;" src="image/btn_3.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-footer">
+		<div class="foot_f header_fix">
+			<p><span style="float:left;">Copyright  2014 argylehotel.com All Right Reserved</span>
+				<span>© 2015 北京汉华国际酒店版权所有  |  技术支持:
+				<a href="http://www.eworldsoft.cn/" target="_blank">上海益沃软件有限公司</a> 
+				</span>
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	var aIl = $('.intro_ul').find('li')
+	var oH4 = $('.Introduction_a_r').find('h3')
+	var detail = $('.house_detail')
+	var imgchange = $('.slideBox_fix img')
+	var arrTi = ['游泳池','桑拿房','健身房']
+	var imgItem = ['image/health/swim.jpg','image/health/sanna.jpg','image/health/health.jpg']
+	var arrDetail = [
+		'<div style="text-indent:2em">室内恒温游泳池为您提供舒适畅泳的休闲场所。</div><div style="text-indent:2em">营业时间：6.：30—23：00</div><div style="text-indent:2em">地点：地下一层</div>',
+		'<div style="text-indent:2em">让您消除一天工作后的疲劳和紧张。</div><div style="text-indent:2em">营业时间：6.：30—23：00</div><div style="text-indent:2em">地点：地下一层</div>',
+		'<div style="text-indent:2em">是您享受运动乐趣的理想场所。</div><div style="text-indent:2em">营业时间：6.：30—23：00</div><div style="text-indent:2em">地点：地下一层</div>'
+		]
+	aIl.click(function(){
+		$(this).addClass('In-active').siblings().removeClass()
+		oH4.html(arrTi[$(this).index()])
+		detail.html(arrDetail[$(this).index()])
+		imgchange.attr('src',imgItem[$(this).index()])
+	})
+})
+</script>
+</html>
