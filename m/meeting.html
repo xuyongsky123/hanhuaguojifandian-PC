@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, user-scalable=0">
+	<title>北京汉化国际</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="scripts/jquery-1.8.3.min.js"></script>
+	<script src="scripts/action.js"></script>
+</head>
+<body>
+	<aside>
+		<div class="container_fix">
+			<div class="aside_content">
+				<a href="index.html"><div class="aside_include_top"></div></a>
+				<div class="close_btn" onclick="removeaside();"></div>
+				<a href="index.html"><div class="line_bottom line_bottom_top">酒店首页</div></a>
+				<a href="about.html"><div class="line_bottom">关于我们</div></a>
+				<a href="house.html"><div class="line_bottom">温馨客房</div></a>
+				<a href="meeting.html"><div class="line_bottom">会议宴会</div></a>
+				<a href="food.html"><div class="line_bottom">餐饮美食</div></a>
+				<a href="entertainment.html"><div class="line_bottom">休闲娱乐</div></a>
+				<a href="contact.html"><div class="line_bottom">联系我们</div></a>
+				<a href="discount.html"><div class="line_bottom">优惠促销</div></a>
+				<div class="btn_style btn_left"></div>
+				<div class="btn_style btn_right"></div>
+			</div>
+		</div>
+	</aside>
+	<nav>
+		<div class="container">
+			<div class="menu_container">
+				<ul class="menu menu_fix">
+					<li onclick="changepage('meeting','multi')" data="meeting" datatype="multi">宴会多功能厅</li>
+					<li onclick="changepage('meeting','weiyang')" data="meeting" datatype="weiyang">未央宫宴会厅</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="header">
+				<a onclick="turnto();" class="top_left"></a>
+				<a href="index.html" class="logo"></a>
+				<a onclick="openmenu();" class="top_right"></a>
+			</div>
+		</div>
+	</header>
+	<div class="clearfix"></div>
+	<section>
+		<div class="container">
+			<div class="content_container">
+				<img class="section_img" src="images/meeting_one.jpg" />
+			</div>
+		</div>
+	</section>
+	<div class="layer_container content_height">
+		<div class="container content content_height">
+		</div>
+	</div>
+	<div class="layer_container layer_container_fix content_height" onclick="autopop()">
+		<input type="hidden" id="btn_input" value="true"/>
+		<div class="container content_fix">
+			<div class="content_left"></div>
+			<div class="content_right">
+				<div class="content_right_article">
+					商务旅客在汉华国际饭店可享受商务便利。本中心配有多功能设施以
+							及会议设备，客人可享用全套设备以及优质的服务。包含未央宫、宣德殿、金华殿、麒麟殿、长秋殿、永昌殿等等
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="book_container">
+		<div class="container">
+			<a class="book"></a>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<ul class="tool">
+				<li><a href="index.html" class="same_btn index_change samecolor">首页</a></li>
+				<li><a href="house.html" class="same_btn house">温馨客房</a></li>
+				<li><a href="food.html" class="same_btn food">餐饮美食</a></li>
+				<li><a href="contact.html" class="same_btn contact">联系我们</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
